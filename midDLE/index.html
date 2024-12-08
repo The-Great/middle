@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Middle Name</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        img {
+            max-width: 300px;
+        }
+        .name {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .guesses {
+            font-size: 18px;
+        }
+        .letter-box {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border: 2px solid #ccc;
+            text-align: center;
+            font-size: 24px;
+            line-height: 30px;
+            margin: 2px;
+            cursor: pointer;
+        }
+        .correct {
+            background-color: lightgreen;
+            color: black;
+            border-color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Guess Joe Biden's Middle Name</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Joe_Biden_presidential_portrait.jpg" alt="Joe Biden">
+
+    <div class="name">
+        Joseph <span id="middle-name"></span> Biden
+    </div>
+
+    <div>
+        <button onclick="submitGuess()">Submit Guess</button>
+    </div>
+
+    <div class="guesses">
+        Remaining Guesses: <span id="remaining">5</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
